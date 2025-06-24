@@ -7,9 +7,12 @@ import { Analytics } from "@vercel/analytics/react";
 const FigtreeFont = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next.js + Notion — Waitlist Template",
+  title: "SmartRing.uz",
   description:
     "Aqlli to’lovlar uchun Smart Ring!",
+    icons: {
+    icon: "/smartring.jpg", // <--- favicon joyi
+  },
 };
 
 export default function RootLayout({
@@ -19,20 +22,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <meta property="og:image" content="/opengraph-image.png" />
-      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image" content="/smartring.jpg" />
+      <meta property="og:image:type" content="image/jpg" />
       <meta property="og:image:width" content="1280" />
       <meta property="og:image:height" content="832" />
       <meta
         property="og:site_name"
-        content="Next.js + Notion — Waitlist Template"
+        content="Smartring.uz"
       />
       <meta
         property="og:url"
-        content="https://nextjs-notion-waitlist.vercel.app/"
+        content="https://smartring.uz/"
       />
-      <meta name="twitter:image" content="/twitter-image.png" />
-      <meta name="twitter:image:type" content="image/png" />
+      <meta name="twitter:image" content="/smartring.jpg" />
+      <meta name="twitter:image:type" content="image/jpg" />
       <meta name="twitter:image:width" content="1280" />
       <meta name="twitter:image:height" content="832" />
       <body className={FigtreeFont.className}>

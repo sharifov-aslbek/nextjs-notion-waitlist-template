@@ -62,7 +62,7 @@ export default function Form({
         className="mt-4 flex w-full items-center justify-center gap-1 text-muted-foreground">
         <p>Bizning telegram botimiz</p>
         <Link
-          href="https://github.com/lakshaybhushan"
+          href="https://t.me/smartringuz_bot"
           rel="noopener noreferrer"
           target="_blank">
           <FaTelegram className="ml-0.5 h-5 w-5 transition-all duration-200 ease-linear hover:text-yellow-200" />
