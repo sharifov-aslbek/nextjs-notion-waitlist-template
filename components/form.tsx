@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ChangeEvent } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaTelegram, FaXTwitter } from "react-icons/fa6";
 import { Input } from "@/components/ui/input";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { EnhancedButton } from "@/components/ui/enhanced-btn";
@@ -33,15 +33,15 @@ export default function Form({
       <motion.div variants={itemVariants}>
         <Input
           type="text"
-          placeholder="Your Name"
+          placeholder="Sizning ismingiz"
           value={name}
           onChange={handleNameChange}
         />
       </motion.div>
       <motion.div variants={itemVariants}>
         <Input
-          type="email"
-          placeholder="Your Email Address"
+          type="text"
+          placeholder="Sizning telegram nikingiz yoki telefon raqamingiz"
           value={email}
           onChange={handleEmailChange}
         />
@@ -54,25 +54,18 @@ export default function Form({
           iconPlacement="right"
           className="mt-2 w-full"
           disabled={loading}>
-          {loading ? "Loading..." : "Join Waitlist!"}
+          {loading ? "Loading..." : "Yuborish!"}
         </EnhancedButton>
       </motion.div>
-      <motion.div
+       <motion.div
         variants={itemVariants}
         className="mt-4 flex w-full items-center justify-center gap-1 text-muted-foreground">
-        <p>For any queries, reach out at </p>
-        <Link
-          href="https://x.com/blakssh"
-          rel="noopener noreferrer"
-          target="_blank">
-          <FaXTwitter className="h-4 w-4 transition-all duration-200 ease-linear hover:text-yellow-200" />
-        </Link>
-        or
+        <p>Bizning telegram botimiz</p>
         <Link
           href="https://github.com/lakshaybhushan"
           rel="noopener noreferrer"
           target="_blank">
-          <FaGithub className="ml-0.5 h-5 w-5 transition-all duration-200 ease-linear hover:text-yellow-200" />
+          <FaTelegram className="ml-0.5 h-5 w-5 transition-all duration-200 ease-linear hover:text-yellow-200" />
         </Link>
       </motion.div>
     </motion.div>
